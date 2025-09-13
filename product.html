@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Richie Barcelona">
+    <meta name="description" content="Browse our comprehensive selection of pharmaceutical products at Miran Drug Shop">
+    <title>Products - Miran Drug Shop</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-pills"></i> MIRAN DRUG SHOP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT US</a></li>
+                <li><a href="hours.html"><i class="fas fa-clock"></i> HOURS</a></li>
+                <li><a href="product.html"><i class="fas fa-shopping-cart"></i> PRODUCTS</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> CONTACT</a></li>
+                <li><a href="services.html"><i class="fas fa-stethoscope"></i> SERVICES</a></li>
+            </ul>
+        </nav>
+        
+        <div class="logo-section">
+            <figure>
+                <img src="images/Drug shop 4.jpeg" alt="Miran Drug Shop Products" width="200" height="200">
+                <figcaption>
+                    <i class="fas fa-star"></i> Quality Products <i class="fas fa-star"></i>
+                </figcaption>
+            </figure>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container fade-in-up">
+            <h2 class="gradient-text">Our <span class="highlight">Product Catalog</span></h2>
+            <p class="text-center mb-2">
+                Discover our comprehensive range of pharmaceutical products, carefully selected to meet your healthcare needs.
+                All products are sourced from reputable manufacturers and meet the highest quality standards.
+            </p>
+        </section>
+
+        <section class="search-section container fade-in-up">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search products by name or category..." class="form-control">
+                    <button type="button" id="search-btn" class="btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                <div class="filter-options">
+                    <select id="category-filter" class="form-control">
+                        <option value="">All Categories</option>
+                        <option value="pain-relief">Pain Relief</option>
+                        <option value="antibiotics">Antibiotics</option>
+                        <option value="vitamins">Vitamins & Supplements</option>
+                        <option value="diabetes">Diabetes Care</option>
+                        <option value="hypertension">Hypertension</option>
+                        <option value="respiratory">Respiratory</option>
+                    </select>
+                    <select id="price-filter" class="form-control">
+                        <option value="">All Prices</option>
+                        <option value="low">Under $10</option>
+                        <option value="medium">$10 - $25</option>
+                        <option value="high">Over $25</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section container fade-in-up">
+            <h2 class="text-center mb-2">Featured Products</h2>
+            <div class="grid grid-3" id="products-grid">
+                <!-- Pain Relief Category -->
+                <div class="product-card card" data-category="pain-relief" data-price="low">
+                    <div class="product-image-container">
+                        <img src="images/drug shop 1.jpeg" alt="Pain Relief Medication" class="product-image">
+                        <div class="product-overlay">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Paracetamol 500mg</h3>
+                        <p class="product-description">Effective pain relief and fever reduction. Suitable for adults and children over 12 years.</p>
+                        <div class="product-meta">
+                            <span class="price">$5.99</span>
+                            <span class="stock in-stock">In Stock</span>
+                        </div>
+                        <button class="btn btn-success add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card card" data-category="pain-relief" data-price="medium">
+                    <div class="product-image-container">
+                        <img src="images/drug shop 2.jpeg" alt="Ibuprofen Medication" class="product-image">
+                        <div class="product-overlay">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ibuprofen 400mg</h3>
+                        <p class="product-description">Anti-inflammatory pain relief for headaches, muscle pain, and arthritis.</p>
+                        <div class="product-meta">
+                            <span class="price">$12.99</span>
+                            <span class="stock in-stock">In Stock</span>
+                        </div>
+                        <button class="btn btn-success add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Antibiotics Category -->
+                <div class="product-card card" data-category="antibiotics" data-price="high">
+                    <div class="product-image-container">
+                        <img src="images/Drug shop3.jpeg" alt="Antibiotic Medication" class="product-image">
+                        <div class="product-overlay">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Amoxicillin 500mg</h3>
+                        <p class="product-description">Broad-spectrum antibiotic for bacterial infections. Prescription required.</p>
+                        <div class="product-meta">
+                            <span class="price">$28.99</span>
+                            <span class="stock in-stock">In Stock</span>
+                        </div>
+                        <button class="btn btn-success add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vitamins Category -->
+                <div class="product-card card" data-category="vitamins" data-price="low">
+                    <div class="product-image-container">
+                        <img src="images/Drug shop 4.jpeg" alt="Vitamin Supplements" class="product-image">
+                        <div class="product-overlay">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Multivitamin Complex</h3>
+                        <p class="product-description">Complete daily vitamin supplement for overall health and wellness.</p>
+                        <div class="product-meta">
+                            <span class="price">$8.99</span>
+                            <span class="stock in-stock">In Stock</span>
+                        </div>
+                        <button class="btn btn-success add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Diabetes Care Category -->
+                <div class="product-card card" data-category="diabetes" data-price="medium">
+                    <div class="product-image-container">
+                        <img src="images/drug shop 1.jpeg" alt="Diabetes Care Products" class="product-image">
+                        <div class="product-overlay">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blood Glucose Monitor</h3>
+                        <p class="product-description">Accurate blood glucose monitoring device with test strips included.</p>
+                        <div class="product-meta">
+                            <span class="price">$22.99</span>
+                            <span class="stock in-stock">In Stock</span>
+                        </div>
+                        <button class="btn btn-success add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Respiratory Category -->
+                <div class="product-card card" data-category="respiratory" data-price="low">
+                    <div class="product-image-container">
+                        <img src="images/drug shop 2.jpeg" alt="Respiratory Medication" class="product-image">
+                        <div class="product-overlay">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Salbutamol Inhaler</h3>
+                        <p class="product-description">Relief for asthma and breathing difficulties. Fast-acting bronchodilator.</p>
+                        <div class="product-meta">
+                            <span class="price">$7.99</span>
+                            <span class="stock in-stock">In Stock</span>
+                        </div>
+                        <button class="btn btn-success add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section container fade-in-up">
+            <h2 class="text-center mb-2">Product Categories</h2>
+            <div class="grid grid-4">
+                <div class="category-card card">
+                    <div class="text-center">
+                        <i class="fas fa-head-side-cough fa-3x" style="color: var(--primary-color);"></i>
+                    </div>
+                    <h3>Pain Relief</h3>
+                    <p>Over-the-counter pain medications for various conditions</p>
+                    <a href="#" class="btn btn-secondary">Browse Category</a>
+                </div>
+                <div class="category-card card">
+                    <div class="text-center">
+                        <i class="fas fa-bacteria fa-3x" style="color: var(--danger-color);"></i>
+                    </div>
+                    <h3>Antibiotics</h3>
+                    <p>Prescription antibiotics for bacterial infections</p>
+                    <a href="#" class="btn btn-secondary">Browse Category</a>
+                </div>
+                <div class="category-card card">
+                    <div class="text-center">
+                        <i class="fas fa-apple-alt fa-3x" style="color: var(--success-color);"></i>
+                    </div>
+                    <h3>Vitamins</h3>
+                    <p>Essential vitamins and dietary supplements</p>
+                    <a href="#" class="btn btn-secondary">Browse Category</a>
+                </div>
+                <div class="category-card card">
+                    <div class="text-center">
+                        <i class="fas fa-heartbeat fa-3x" style="color: var(--accent-color);"></i>
+                    </div>
+                    <h3>Chronic Care</h3>
+                    <p>Medications for diabetes, hypertension, and more</p>
+                    <a href="#" class="btn btn-secondary">Browse Category</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section container fade-in-up">
+            <div class="card">
+                <h3><i class="fas fa-info-circle"></i> Important Information</h3>
+                <div class="grid grid-2">
+                    <div>
+                        <h4><i class="fas fa-prescription-bottle"></i> Prescription Requirements</h4>
+                        <p>Some medications require a valid prescription from a licensed healthcare provider. Please ensure you have the necessary documentation before purchasing prescription medications.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fas fa-shipping-fast"></i> Availability</h4>
+                        <p>Product availability may vary. Please contact us to confirm stock levels for specific medications. We also offer ordering services for out-of-stock items.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid grid-3">
+                <div>
+                    <h4><i class="fas fa-pills"></i> Miran Drug Shop</h4>
+                    <p>Your trusted healthcare partner since 2020</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Your Location</p>
+                    <p><i class="fas fa-phone"></i> +256755121567</p>
+                    <p><i class="fas fa-envelope"></i> info@mirandrugshop.com</p>
+                </div>
+            </div>
+            <hr style="margin: 2rem 0; border: 1px solid rgba(255,255,255,0.2);">
+            <p class="text-center">
+                &copy; <span id="current-year"></span> Miran Drug Shop. All rights reserved.
+            </p>
+            <p class="text-center">
+                <a href="#" id="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

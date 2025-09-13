@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mirandrugshop.com/sitemap.xml
+
+# Allow all pages to be crawled
+Allow: /index.html
+Allow: /about.html
+Allow: /product.html
+Allow: /services.html
+Allow: /hours.html
+Allow: /contact.html
+
+# Allow CSS and JavaScript files
+Allow: /style.css
+Allow: /script.js
+
+# Allow images
+Allow: /images/
+
+# Disallow temporary or private files
+Disallow: /README.md
+Disallow: /sitemap.xml
+Disallow: /robots.txt
